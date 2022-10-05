@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications",
+    "eslint.codeActionsOnSave.mode": "problems",
+    "eslint.format.enable": true,
+    "breadcrumbs.symbolSortOrder": "name",
+}
