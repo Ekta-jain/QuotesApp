@@ -1,6 +1,10 @@
 {
     "editor.formatOnSave": false,
     "editor.formatOnSaveMode": "modifications",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate":["javascript"],
     "eslint.codeActionsOnSave.mode": "problems",
     "eslint.format.enable": true,
     "breadcrumbs.symbolSortOrder": "name",
