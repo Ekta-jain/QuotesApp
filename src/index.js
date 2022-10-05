@@ -5,6 +5,9 @@ const userRouter = require('./routes/userRoutes');
 const mongoose = require('mongoose');
 
 const app = express();
+// to send express body to json we used this
+app.use(express.json());
+
 app.use('/users', userRouter);
 app.use('/note', noteRouter);
 
