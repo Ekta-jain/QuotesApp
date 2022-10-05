@@ -8,8 +8,15 @@ app.get("/",(req,res)=>(
 ))
 
 app.get("/quote",(req,res)=>(
-    res.send(quotes)
+    res.status(200).json(quotes)
 ))
+
+app.get("/random",(req,res)=>{
+    let index = Math.floor(Math.random()*quotes.length)
+    let quote = quotes[index]
+    res.status(200).json(quote)
+})
+
 app.listen(5010,()=>(
     console.log("server strated on port 5010")
 ))
